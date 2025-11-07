@@ -1,55 +1,112 @@
-# 🧬💻 Guía de Introducción a la Bioinformática para Estudiantes de Biología
+# 🧬🧪 AminoLab Software: Traductor de DNA a Proteína
 
-Bienvenido/a a este repositorio, creado como una guía práctica y accesible para estudiantes de biología que desean adentrarse en el mundo de la bioinformática.
-Aquí encontrarás explicaciones sencillas, ejemplos reales y recursos útiles para comprender los fundamentos sin necesidad de experiencia previa en programación.
+Bienvenido/a a este repositorio. AminoLab es un programa escrito en Python que permite traducir secuencias de ADN a proteínas utilizando el código genético *estándar*.
+Convierte las bases nitrogenadas de ADN (`A`, `T`, `C`, `G`) a ARN mensajero (`A`, `U`, `C`, `G`), busca el codón de inicio y lo traduce en aminoácidos hasta el primer codón de parada.
 
-## Objetivo
+## 🤓 ¿Cómo usar este repositorio?
+1. Clona este repositorio a través de tu terminal:
 
-Proporcionar una introducción progresiva y clara a las herramientas y conceptos básicos de la bioinformática, enfocándose en su aplicación práctica dentro de la biología molecular, la genética y la investigación biomédica.
+		git clone https://github.com/Yannisavlonitis/Introduccion_a_la_bioinformatica.git
 
-## Contenidos
 
-**1️⃣ Introducción a la programación científica**
+2. Desde la carpeta donde está contenido el programa, ejecútalo de la siguiente manera:
 
-Qué es, para qué sirve y cómo se aplica en biología.
+   		python traductor.py
 
-> Autora: Virginia García-Loygorri Arias
+3. El programa te pedirá tu secuencia de DNA, escríbela o pégala a continuación.
 
-**2️⃣ Python**
+   		Inserta una secuencia de DNA: tu_secuencia_de_DNA
+
+
+### ⚙️ Funcionamiento
+
+1. **Entrada (`dna`)**  
+   Lista con una o más secuencias de ADN.
+
+   > ⚠️ **👀 - OJO: Secuencias de menos de 700b!!!** ⚠️  A partir de ahí, el código puede empezar a fallar :(
+   
+   Ejemplo:
+   ```python
+   dna = ['ATGGCTGACGTTGAGGCTTACCTGGAGGAGCTGGTGCTGCTGGAGCTGACCTGGGACTTAA']
+3.  Código genético (inv)
+  Diccionario que asocia cada aminoácido con sus codones.
+  Incluye:
+
+          'Z': codones de inicio (AUG, CUG, UUG)
+  
+          'X': codones de parada (UAA, UAG, UGA)
+
+4. Salida. 
+  Lista con las proteínas traducidas o un mensaje de error si la secuencia no puede traducirse (no ha encontrado un codón de iniciación).
+
+### 🧠 Lógica del programa:
+
+-> Convierte las bases de ADN (T) en bases de ARN (U).
+
+-> Elimina caracteres no válidos o espacios.
+
+-> Asegura que la secuencia sea múltiplo de 3 eliminando los sobrantes.
+
+-> Busca el primer codón de inicio (AUG, CUG, UUG).
+
+-> Traduce de tres en tres bases hasta encontrar un codón de parada (UAA, UAG, UGA).
+
+-> Devuelve la secuencia de aminoácidos obtenida.
+
+## 📚 Contenidos del repositorio
+
+**1️⃣ - AminoLab Software**
+
+Es el programa, desarrollado en python, que convierte una secuencia de DNA en la secuencia correspondiente de aminoácidos.
+
+> Autor: Virginia García-Loygorri Arias
+
+**2️⃣ - Secuencias de DNA de ejemplo**
+
+Varios ficheros de texto con secuencias de DNA que puedes copiar y pegar para ver el funcionamiento del programa.
+
+> Autor:
+
+**3️⃣ - Documentación**
+
+Archivos y documentación de apoyo por si hay que refrescar los conceptos de biología o de programación.
+
+#### 🐍 Python
 
 Introducción a la lógica de programación y al lenguaje Python.
 
 > Autor: 
 
-**3️⃣ Genética clínica y de poblaciones**
+#### 🧬 Genética clínica y de poblaciones
 
 Conceptos de genética para que no te pierdas.
 
 > Autor:
 
-**4️⃣ Fundamentos de linux**
+#### 💻 Fundamentos de linux
 
 Comandos y uso de la terminal para que puedas automatizar trabajos.
 
-> Autora:
+> Autor:
 
-**5️⃣ Algoritmos e inteligencia artificial**
+#### 🪄 Secuenciación y ómicas de próxima generación
 
-Aplicación de algoritmos a datos biológicos y uso de inteligencia artificial.
+Técnicas útiles en bioinformática.
 
-> Autora:
+> Autor:
 
-**6️⃣ Estadística y R**
+#### 🗂 Bases de datos de genes, mRNAs y proteínas
 
-Conceptos de estadística y cómo aplicarlos en R.
+Para que tengas dónde buscar secuencias.
 
-> Autora:
+> Autor:
 
-**7️⃣ Bioética**
+### **4️⃣ Valores, objetivos y licencia del proyecto**
 
-Legislación y ética aplicados a biología.
+Por qué hacemos este proyecto y por qué lo compartimos libremente.
 
-> Autora:
+> Autor: 
+
 
 ## ⚙️ Requisitos
 
@@ -57,18 +114,8 @@ Legislación y ética aplicados a biología.
 
 -> Ordenador con conexión a internet.
 
--> Entorno Python o R instalado para los ejercicios prácticos.
+-> Entorno Python.
 
-## !💡 Cómo usar esta guía
-
-1. Clona este repositorio a través de tu terminal:
-
-		git clone https://github.com/Yannisavlonitis/Introduccion_a_la_bioinformatica.git
-
-
-2. Abre la carpeta correspondiente al tema que te interese.
-
-3. Estudia y practica con los ejemplos.
 
 ## 🤝 Contribuciones
 
