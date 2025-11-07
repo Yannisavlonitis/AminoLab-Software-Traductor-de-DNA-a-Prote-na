@@ -1,1 +1,0 @@
-En Python, los valores son los datos que se almacenan en las variables, como números (enteros o de punto flotante), cadenas de texto, booleanos (True/False), y colecciones como listas, tuplas, diccionarios y conjuntos. El tipo de dato se asigna automáticamente y las variables se definen usando el operador de asignación =
