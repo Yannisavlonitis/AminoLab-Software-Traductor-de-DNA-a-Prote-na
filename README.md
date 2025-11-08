@@ -99,7 +99,7 @@ Técnicas útiles en bioinformática.
 
 Para que tengas dónde buscar secuencias.
 
-> Autor:
+> Autor: Vanesa de las Heras Hermosilla
 
 ### **4️⃣ Valores, objetivos y licencia del proyecto**
 
