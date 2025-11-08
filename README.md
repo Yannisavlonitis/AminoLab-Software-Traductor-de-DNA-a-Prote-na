@@ -75,7 +75,7 @@ Archivos y documentación de apoyo por si hay que refrescar los conceptos de bio
 
 Introducción a la lógica de programación y al lenguaje Python.
 
-> Autor: 
+> Autor: Samuel Pintos González
 
 #### 🧬 Genética clínica y de poblaciones
 
