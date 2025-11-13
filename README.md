@@ -102,12 +102,6 @@ Para que tengas dónde buscar secuencias.
 
 > Autor: Vanesa de las Heras Hermosilla
 
-### **4️⃣ Valores, objetivos y licencia del proyecto**
-
-Por qué hacemos este proyecto y por qué lo compartimos libremente.
-
-> Autor: 
-
 
 ## ⚙️ Requisitos
 
@@ -126,3 +120,6 @@ Si encuentras errores o quieres mejorar el contenido, abre un *issue* o envía u
 ## 📄 Licencia
 
 Este proyecto está bajo la licencia [GNU Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.html).
+
+> Hemos decicido aplicar una licencia GNU para asegurar que nuestro software AminoLab sea accesible y gratis para todos los usuarios.
+> Creemos firmemente en el open-access para el avance de la comunidad científica.
